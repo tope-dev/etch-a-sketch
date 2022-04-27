@@ -9,8 +9,19 @@
   <script src="app.js" defer></script>
 </head>
 <body>
-  <div class="sketch">
-    
+  <div class="nav-bar">
+    <button class="button--open">Choose Layout</button>
   </div>
+  
+  <dialog class="modal" id="modal">
+    <h2>Square Count</h2>
+    <label for="square-count">Grid Size</label><br>
+    <input type="range" id="square-count" name="square-count">
+    <button class="button--close">X</button>
+  </dialog>
+  
+  <div class="sketch">
+  </div>
+  <footer>@tope-dev</footer>
 </body>
 </html>

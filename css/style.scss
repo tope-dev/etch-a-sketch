@@ -1,12 +1,56 @@
 body {
   margin: 0;
+  
+}
+
+.button--open {
+  font-weight: 1000;
+  font-size: 16px;
+  color: black;
+  // text-shadow: 3px 3px black;
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: 0.05s ease-in-out;
+  &:hover {
+    color: white;
+    border: 2px solid white;
+    background-color: orangered;
+    transform: scale(1.1);
+  }
+}
+
+.button--open {
+  font-weight: 1000;
+  font-size: 16px;
+  color: black;
+  // text-shadow: 3px 3px black;
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: 0.05s ease-in-out;
+  &:hover {
+    color: white;
+    border: 2px solid white;
+    background-color: orangered;
+  }
+}
+
+.nav-bar {
+  min-height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
 }
 
 .sketch {
-  height: 100vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
-  background-color: greenyellow;
+  background-color: black;
   &__row {
     flex: 1;
     display: flex;
@@ -17,9 +61,18 @@ body {
 .square {
   flex: 1;
   background-color: orangered;
-  border: 1px solid black;
   transition: ease-in-out 0.5s;
   &--hover{
     background-color: blueviolet;
   }
+}
+
+footer {
+  min-height: 3vh;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }

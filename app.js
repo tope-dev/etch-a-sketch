@@ -1,7 +1,9 @@
 const sketchContainer = document.querySelector('.sketch');
 
-let squareCount = 16;
 
+let squareCount = 4;
+
+// Set squares on the screen depending on the squareCount
 for (i = 1; i <= squareCount; i++) {
   // Create Sketch row
   const sketchRow = document.createElement('div');
@@ -15,11 +17,22 @@ for (i = 1; i <= squareCount; i++) {
   }
 }
 
-
+// Draw squares
 const squares = document.querySelectorAll('.square');
-
 squares.forEach((square) => {
   square.addEventListener('mouseover', () => {
     square.classList.add('square--hover');
   });
+});
+
+
+
+// Modal Setup
+const modal = document.querySelectorAll('#modal');
+const openModal = document.querySelector('.button--open')
+const closeModal = document.querySelector('.button--close')
+modal.showModal();
+
+openModal.addEventListener('click', () => {
+  modal.showModal();
 });
