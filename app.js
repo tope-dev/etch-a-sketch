@@ -28,11 +28,13 @@ squares.forEach((square) => {
 
 
 // Modal Setup
-const modal = document.querySelectorAll('#modal');
+const modal = document.querySelector('#modal');
 const openModal = document.querySelector('.button--open')
 const closeModal = document.querySelector('.button--close')
-modal.showModal();
 
 openModal.addEventListener('click', () => {
   modal.showModal();
+});
+closeModal.addEventListener('click', () => {
+  modal.close();
 });
