@@ -7,15 +7,15 @@ body {
   display: flex;
   flex-direction: column;
   background-color: greenyellow;
-  &__row {
-    flex: 1;
-    display: flex;
-    background-color: aqua;
-  }
+}
+.sketch__row {
+  flex: 1;
+  display: flex;
+  background-color: aqua;
 }
 
 .square {
   flex: 1;
   background-color: orangered;
   border: 1px solid black;
-}
+}/*# sourceMappingURL=style.css.map */
