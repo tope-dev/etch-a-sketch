@@ -18,10 +18,6 @@ input {
   padding: 0;
 }
 
-.logo {
-  color: white;
-}
-
 .modal {
   display: flex;
   flex-direction: column;
@@ -137,6 +133,18 @@ input {
   background-color: black;
   padding: 0 35px;
   flex-wrap: wrap;
+}
+.nav-bar__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar__text {
+  color: white;
+  margin-right: 10px;
+}
+.nav-bar__logo {
+  color: white;
 }
 
 .sketch {

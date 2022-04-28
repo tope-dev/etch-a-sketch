@@ -19,10 +19,6 @@ input {
   padding: 0;
 }
 
-.logo {
-  color: white;
-}
-
 .modal {
   display: flex;
   flex-direction: column;
@@ -136,6 +132,18 @@ input {
   background-color: black;
   padding: 0 35px;
   flex-wrap: wrap;
+  &__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__text {
+    color: white;
+    margin-right: 10px;
+  }
+  &__logo {
+    color: white;
+  }
 }
 
 .sketch {
