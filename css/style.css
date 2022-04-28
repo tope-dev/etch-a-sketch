@@ -59,6 +59,12 @@ input {
   justify-content: space-between;
   width: 100%;
 }
+.modal__input--color {
+  transition: 0.1s ease-in-out;
+}
+.modal__input--color:hover {
+  transform: scale(1.5);
+}
 .modal__background-container {
   margin-top: 10px;
   display: flex;
@@ -66,6 +72,13 @@ input {
   justify-content: space-between;
   width: 100%;
 }
+.modal__input--background {
+  transition: 0.1s ease-in-out;
+}
+.modal__input--background:hover {
+  transform: scale(1.5);
+}
+
 .button--open {
   font-weight: 1000;
   font-size: 16px;
@@ -93,18 +106,27 @@ input {
   padding: 6px 12px;
   transition: 0.05s ease-in-out;
   margin-top: 20px;
+  transition: 0.1s;
 }
 .button--close:hover {
   color: white;
   background-color: #ff4500;
+  transform: scale(1.1);
 }
 
-.button--rgb {
+.button--erase {
+  font-size: 20px;
   padding: 5px 10px;
-  margin-top: 10px;
+  margin-top: 15px;
   background-color: #fff;
   border: 1px solid black;
   border-radius: 25px;
+  transition: 0.1s;
+}
+.button--erase:hover {
+  color: white;
+  background-color: #ff4500;
+  transform: scale(1.1);
 }
 
 .nav-bar {

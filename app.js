@@ -78,3 +78,16 @@ squareInput.addEventListener('change', () => {
   squareCountDisplay.innerText = `${squareCount} x ${squareCount}`;
   generateSquares();
 });
+
+// Erase colored squares
+
+const eraseButton = document.querySelector('.button--erase');
+eraseButton.addEventListener('click', () => {
+  const coloredSquares = document.querySelectorAll('.square--hover');
+  coloredSquares.forEach((square) => {
+      let backgroundCol = document.querySelector('.modal__input--background').value;
+      square.classList.remove('square--hover');
+      square.style.backgroundColor = backgroundCol;
+      square.classList.add('square--background');
+  });
+})
