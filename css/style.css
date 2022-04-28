@@ -33,6 +33,7 @@ input {
   border-radius: 5px;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
   max-width: 50ch;
+  padding: 25px;
 }
 .modal::-webkit-backdrop {
   background: linear-gradient(45deg, yellow, blue);
@@ -56,12 +57,14 @@ input {
   display: flex;
   gap: 5px;
   justify-content: space-between;
+  width: 100%;
 }
 .modal__background-container {
   margin-top: 10px;
   display: flex;
   gap: 5px;
   justify-content: space-between;
+  width: 100%;
 }
 .button--open {
   font-weight: 1000;

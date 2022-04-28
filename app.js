@@ -2,8 +2,8 @@ const sketchContainer = document.querySelector('.sketch');
 let squareCount = document.querySelector('.modal__input--size').value;
 let squareInput = document.querySelector('.modal__input--size');
 
-let backgroundColor = '#ff4400';
-let penColor = '#8a2be2';
+let backgroundCol = document.querySelector('.modal__input--background').value;
+let penColor = document.querySelector('.modal__input--color').value;
 
 generateSquares();
 
@@ -19,7 +19,7 @@ function generateSquares() {
     for (j = 1; j <= squareCount; j++) {
       // Create a Square
       const square = document.createElement('div');
-      square.classList.add('square', `square--${i}__${j}`);
+      square.classList.add('square', `square--${i}__${j}`, 'square--background');
       sketchRow.appendChild(square);
     }
   }
@@ -39,14 +39,23 @@ function addHoverListener() {
   const squares = document.querySelectorAll('.square');
   squares.forEach((square) => {
     square.addEventListener('mouseover', () => {
+      let penColor = document.querySelector('.modal__input--color').value;
       square.classList.add('square--hover');
+      square.style.backgroundColor = penColor;
+      square.classList.remove('square--background');
     });
   });
 }
 
-
-// Change color
-
+// Change background color
+let backgroundInput = document.querySelector('.modal__input--background');
+backgroundInput.addEventListener('change', () => {
+  const squares = document.querySelectorAll('.square--background');
+  squares.forEach((square) => {
+    let backgroundCol = document.querySelector('.modal__input--background').value;
+    square.style.backgroundColor = backgroundCol;
+  });
+});
 
 // Modal Pop Up
 const modal = document.querySelector('#modal');
