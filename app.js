@@ -3,7 +3,13 @@ let squareCount = document.querySelector('.modal__input--size').value;
 let squareInput = document.querySelector('.modal__input--size');
 
 let backgroundCol = document.querySelector('.modal__input--background').value;
+const backgroundColorInput = document.querySelector('.modal__input--background');
 let penColor = document.querySelector('.modal__input--color').value;
+
+// Saves the background color variable on changes
+backgroundColorInput.addEventListener('change', () => {
+  backgroundCol = document.querySelector('.modal__input--background').value;
+})
 
 generateSquares();
 
@@ -20,6 +26,7 @@ function generateSquares() {
       // Create a Square
       const square = document.createElement('div');
       square.classList.add('square', `square--${i}__${j}`, 'square--background');
+      square.style.backgroundColor = backgroundCol;
       sketchRow.appendChild(square);
     }
   }
