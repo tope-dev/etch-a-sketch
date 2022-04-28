@@ -10,12 +10,23 @@
 </head>
 <body>
   <div class="nav-bar">
-    <button class="button--open">Choose Layout</button>
+    <h1 class="logo">Hover-a-Sketch</h1>
+    <button class="button--open">options</button>
   </div>
   
   <dialog class="modal" id="modal">
-    <h2>Square Count</h2>
-    <input type="range" id="square-count" name="square-count">
+    <h1>SKETCH OPTIONS</h1>
+    <p class="modal__display"></p>
+    <input type="range" id="modal__input--size" name="modal__input" class="modal__input--size">
+    <div class="modal__color-container">
+      <p>Color: </p>
+      <input type="color" id="modal__input--color" class="modal__input--color" value="#8a2be2">
+    </div>
+    <div class="modal__background-container">
+      <p>Background Color: </p>
+      <input type="color" id="modal__input--backround" class="modal__input--background" value="#ff4500">
+    </div>
+    <!-- <button class="button--rgb">RGB Style</button> -->
     <button class="button--close">Close</button>
   </dialog>
   
